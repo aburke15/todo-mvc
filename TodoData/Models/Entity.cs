@@ -14,8 +14,8 @@ namespace TodoData
 
         public DateTime CreatedOn { get; private set; }
 
-        public DateTime LastUpdatedOn { get; set; }
+        public DateTime? LastUpdatedOn { get; set; }
 
-        public DateTime DeprecatedOn { get; set; }
+        public DateTime? DeprecatedOn { get; set; }
     }
 }
