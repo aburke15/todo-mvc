@@ -9,16 +9,15 @@ using TodoMvc.Models;
 
 namespace TodoMvc.Controllers
 {
-    [Route("api/[controller]")]
-    public class UserController : Controller
+    public class TodosController : Controller
     {
         private readonly TodoContext Context;
 
-        public UserController(TodoContext context) 
+        public TodosController(TodoContext context) 
             => Context = context;
 
         [HttpPost]
-        public IActionResult CreateUser([FromBody]TestRequest request)
+        public IActionResult Test([FromBody]TestRequest request)
         {
 
             
